@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/cardview_default_elevation"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:id="@+id/ivCard"
+            android:padding="3dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bicycle"
+            android:layout_toEndOf="@+id/ivCard"
+            android:layout_toRightOf="@+id/ivCard"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:id="@+id/tvCard" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:text="Description card"
+            android:layout_below="@+id/tvCard"
+            android:layout_alignLeft="@+id/tvCard"
+            android:layout_alignStart="@+id/tvCard"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tvDescription"
+            android:textSize="12dp"
+            android:layout_marginBottom="2dp"/>
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:text="@string/buy"
+            android:id="@+id/btnBuy"
+            android:textSize="8dp"
+            android:textAlignment="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="2dp"
+            android:textAllCaps="false"
+            android:theme="@style/ButtonRaised"/>
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:text="@string/addToCart"
+            android:textAllCaps="false"
+            android:textSize="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btnBuy"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="2dp"
+            android:theme="@style/ButtonRaised"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

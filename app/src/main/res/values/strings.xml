@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">recyclerViewPractice</string>
+    <string name="buy">Buy</string>
+    <string name="addToCart">Add to Cart</string>
+</resources>
